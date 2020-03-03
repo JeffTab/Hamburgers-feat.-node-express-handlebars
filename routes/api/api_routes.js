@@ -1,11 +1,11 @@
 const router = require('express').Router();
 
-const { selectAll, insertOne, updateOne, devourOne } = require('../controllers/burger_controllers');
+const { selectAll, insertOne, updateOne, devourOne } = require('../../controllers/burger_controllers');
 
 router.get('/', (req, res) => {
     selectAll()
         .then(burgerdata => {
-            res.render('home', { burgers: burgerdata });
+            res.render('index', { burgers: burgerdata });
         })
         .catch(err => {
             res.status(500).end();
