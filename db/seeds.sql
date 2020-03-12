@@ -1,10 +1,10 @@
 USE burgers_db;
 
 INSERT INTO burgers
-(burger_name)
+    (burger_name)
 VALUES
-("Cheeseburger"),
-("Bacon Cheeseburger"),
-("Double Bacon Cheeseburger");
+    ("Cheeseburger"),
+    ("Bacon Cheeseburger"),
+    ("Double Bacon Cheeseburger");
 
 SELECT * FROM burgers;
